@@ -1,0 +1,60 @@
+Xuôi 
+void veHinhS(int n){
+	int i,j;
+	for (i = 0;i < n ;i++){
+		for ( j = 0; j<i+1; j++){
+			printf("%d ",j+1);
+		}
+		for ( j=0;j < 2*(n-i-1)-1;j++){ //de tam giac o goc 2 (j < n-i-1)
+			printf("  ");
+		}
+	    if (i<n-1){			
+			for ( j=i;j>=0;j--){
+			printf("%d ",j+1);
+			}
+		}
+		if (i>=n-1){    // in ra dong cuoi 
+			for (j=i-1;j>=0;j--){
+			printf("%d ",j+1);
+			}
+		}
+		printf("\n");
+	}
+}
+main(){
+	int n;
+	printf("nhap n ");
+	scanf("%d",&n);
+	veHinhS(n);
+}
+
+
+Ngược
+void veHinhS(int n){
+	int i,j;
+	for (i = 0;i < n ;i++){
+		for ( j = 0; j<i+1; j++){
+			printf("%d ",j+1);
+		}
+		for ( j=0;j < 2*(n-i-1)-1;j++){ //de tam giac o goc 2 (j < n-i-1)
+			printf("  ");
+		}
+	    if (i<n-1){			
+			for ( j=i;j>=0;j--){
+			printf("%d ",j+1);
+			}
+		}
+		if (i>=n-1){    // in ra dong cuoi 
+			for (j=i-1;j>=0;j--){
+			printf("%d ",j+1);
+			}
+		}
+		printf("\n");
+	}
+}
+main(){
+	int n;
+	printf("nhap n ");
+	scanf("%d",&n);
+	veHinhS(n);
+}
